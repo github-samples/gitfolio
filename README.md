@@ -36,6 +36,8 @@ Open [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 All your content lives in **one file**: `app/page.tsx`
 
+**Beginner Tip:** A quick way to start contributing is to improve button text or section copy in `app/page.tsx`. This helps you understand the code structure while making meaningful improvements.
+
 ### 1. Update Your Name/Brand
 Find the navigation section and change `GITFOLIO` to your name:
 ```tsx
