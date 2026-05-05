@@ -164,6 +164,14 @@ Found a bug or have an improvement idea? Contributions are welcome!
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
+## First Contribution Ideas
+
+New to open source? Start with one of these:
+- Fix a typo or unclear sentence in the docs
+- Improve button text or section copy in [app/page.tsx](app/page.tsx)
+- Add a small accessibility improvement
+- Suggest a clearer setup step for beginners
+
 ---
 
 ## 📄 License
