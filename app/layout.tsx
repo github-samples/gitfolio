@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GitFolio - Developer Portfolio Template",
-  description: "Minimal and modern developer portfolio template built with Next.js and Tailwind CSS.",
+  title: "Coding Good Vibes",
+  description: "",
 };
 
 export default function RootLayout({

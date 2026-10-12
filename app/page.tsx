@@ -19,7 +19,7 @@ export default function Home() {
             href="/" 
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
           >
-            GITFOLIO
+            Coding Good Vides
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
@@ -38,13 +38,13 @@ export default function Home() {
               READY TO LAUNCH
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-              BUILD YOUR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">DEVELOPER PORTFOLIO</span> <br />
-              IN MINUTES
+              Introducing my <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">Coding Portfolio</span> <br />
+              by David Mason
             </h1>
           </div>
           <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
-            A beginner-friendly portfolio template that showcases your projects beautifully. Fork it, customize it, deploy it—no design skills required.
+            I&apos;m excited to show what I am working on whilst further my learning.
           </p>
           <div className="pt-8 flex gap-6">
             <Link 
@@ -63,44 +63,44 @@ export default function Home() {
         <section id="work" className="py-20 space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
             <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
-              // YOUR_PROJECTS
+              // My Projects
             </h2>
-            <span className="text-xs font-mono text-cyan-700">Showcase what you&apos;ve built with style</span>
+            <span className="text-xs font-mono text-cyan-700">Please check out my current Projects</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
-              title="PROJECT_ONE"
-              description="Your first amazing project goes here. Describe what problem it solves and the tech you used to build it."
-              tags={["REACT", "NEXTJS", "TAILWIND"]}
+              title="E-Commerce Payment API System"
+              description="Working with a Sandbox Payment System to trigger fake Purchases"
+              tags={["Python", "IAM", "Amplify", "API Gateway", "Lambda", "KMS", "HTML"]}
               color="cyan"
-              href="#"
+              href="https://github.com/CodingGoodVibes/SandboxPaymentProcessor/tree/main"
             />
             {/* Project 2 */}
             <ProjectCard 
-              title="PROJECT_TWO"
-              description="Your second project showcase. Tell visitors what makes this project special and what you learned building it."
-              tags={["JAVASCRIPT", "API", "CSS"]}
+              title="Photo Geo Location Tool"
+              description="A Photo Geo Location tool to verify where the Photo was taken"
+              tags={["Javascript", "API Gateway", "IAM","KMS" , "Amplify", "Lambda", "DynamoDB"]}
               color="fuchsia"
-              href="#"
+              href="https://github.com/CodingGoodVibes/Green-Scheme"
             />
             {/* Project 3 */}
-            <ProjectCard 
+            {/* <ProjectCard 
               title="PROJECT_THREE"
               description="Another project to highlight your skills. Share the impact or results of this work."
               tags={["TYPESCRIPT", "NODE", "EXPRESS"]}
               color="purple"
               href="#"
-            />
+            /> */}
             {/* Project 4 */}
-            <ProjectCard 
+            {/* <ProjectCard 
               title="PROJECT_FOUR"
               description="Keep building and adding to your portfolio. Each project tells part of your developer story."
               tags={["PYTHON", "DJANGO", "POSTGRESQL"]}
               color="yellow"
               href="#"
-            />
+            /> */}
           </div>
         </section>
 
@@ -118,10 +118,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(34,211,238,0.05)_1px,transparent_1px)] bg-[size:100%_4px] z-20 pointer-events-none" />
               
               <Image 
-                src={`${basePath}/me.png`}
-                alt="Profile"
-                fill
-                className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+              src="https://avatars.githubusercontent.com/u/222207518?s=400&u=b56c25ad1a047971025500f7c6b9f027f0918a33&v=4"
+              alt="David Photo"
+              fill
+              className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
               />
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="py-20 border-t border-cyan-900/30">
+        {/* <section id="contact" className="py-20 border-t border-cyan-900/30">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
               READY TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">LAUNCH?</span>
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="py-8 text-center text-xs font-mono text-cyan-900/50 border-t border-cyan-900/20">
@@ -208,7 +208,7 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
   };
 
   return (
-    <Link href={href} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
+    <Link   target="_blank" rel="noopener noreferrer" href={href} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
       <div className="flex justify-between items-start">
         <h3 className={`text-xl font-bold text-white tracking-wider transition-colors ${textColors[safeColor]}`}>
           {title}
