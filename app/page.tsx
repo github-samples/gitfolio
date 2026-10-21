@@ -19,7 +19,7 @@ export default function Home() {
             href="/" 
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
           >
-            GITFOLIO
+            John Wick
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
@@ -135,9 +135,10 @@ export default function Home() {
                 <div>
                   <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">STACK_TRACE</h3>
                   <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JavaScript / Python / TypeScript</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> React / Next.js / Node.js</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Git / GitHub / VS Code</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Gun-fu</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> expert martial arts</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> master marksmanship</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> tactical driving</li>
                   </ul>
                 </div>
                 <div>
