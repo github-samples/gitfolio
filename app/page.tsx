@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
-
+const basePath = process.env.NODE_ENV === "production" ? "/lisamoveon" : "";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#050510] text-cyan-50 font-mono selection:bg-fuchsia-500/30 selection:text-fuchsia-200 overflow-x-hidden">
@@ -19,7 +18,7 @@ export default function Home() {
             href="/" 
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
           >
-            GITFOLIO
+            lisamoveon
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
@@ -71,11 +70,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
-              title="PROJECT_ONE"
-              description="Your first amazing project goes here. Describe what problem it solves and the tech you used to build it."
+              title="MY_PROJECT"
+              description="What this project does and why it's awesome."
               tags={["REACT", "NEXTJS", "TAILWIND"]}
-              color="cyan"
-              href="#"
+              color="cyan"  // Options: cyan, fuchsia, purple, yellow
+              href="https://github.com/you/project"
             />
             {/* Project 2 */}
             <ProjectCard 
@@ -109,9 +108,13 @@ export default function Home() {
           <div className="md:col-span-4 space-y-8">
             <h2 className="text-2xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)]">
               {"// ABOUT_ME"}
+              <p>
+                Your developer journey goes here. What drives you? 
+                What are you passionate about building?
+              </p>
             </h2>
             
-            {/* Profile Image - Replace src with your image in /public */}
+            {/* Profile Image - Replace src with your image in /me.png */}
             <div className="relative w-full aspect-[4/5] border border-cyan-500/30 rounded-sm overflow-hidden bg-cyan-950/30 group">
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgba(5,5,16,0.8)_100%)] z-10" />
               {/* Scanline effect */}
@@ -133,7 +136,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-cyan-500" />
               <div className="grid grid-cols-2 gap-8 font-mono text-sm">
                 <div>
-                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">STACK_TRACE</h3>
+                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">fastapi</h3>
                   <ul className="space-y-2 text-cyan-200/70">
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JavaScript / Python / TypeScript</li>
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> React / Next.js / Node.js</li>
@@ -141,7 +144,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">PROTOCOLS</h3>
+                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">https</h3>
                   <ul className="space-y-2 text-cyan-200/70">
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Always learning</li>
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Ship &gt; Perfect</li>
@@ -170,9 +173,9 @@ export default function Home() {
                 FORK ON GITHUB
               </a>
               <div className="flex items-center gap-8 pt-4">
-                <SocialLink href="https://github.com" label="GITHUB" />
-                <SocialLink href="https://linkedin.com" label="LINKEDIN" />
-                <SocialLink href="https://twitter.com" label="TWITTER" />
+                <SocialLink href="https://github.com/YOUR_USERNAME" label="GITHUB" />
+                <SocialLink href="https://linkedin.com/in/YOUR_USERNAME" label="LINKEDIN" />
+                <SocialLink href="https://twitter.com/YOUR_USERNAME" label="TWITTER" />
               </div>
             </div>
           </div>
